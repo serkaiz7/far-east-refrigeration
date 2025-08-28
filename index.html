@@ -1,62 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Far East Refrigeration & Air Conditioning System Trading</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAR EAST — Showroom</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>FAR EAST REFRIGERATION & AIR CONDITIONING SYSTEM TRADING</h1>
-      <p>Cooling solutions you can trust — precision, reliability, and excellence.</p>
-    </div>
-  </header>
+  <div id="site">
+    <!-- NAV / LOGO -->
+    <nav class="nav">
+      <div class="logo">
+        <!-- Replace with your SVG or image -->
+        <img src="logo-placeholder.png" alt="Far East Refrigeration Logo" />
+      </div>
+      <div class="nav-right">
+        <a class="fb-icon" href="https://www.facebook.com/share/179YKRTBgk/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12A10 10 0 1 0 2 12a10 10 0 0 0 20 0zM15.2 12.1h-1.3v6.1h-2.3V12.1H10V9.9h1.6V8.2c0-1.3.8-2.9 2.6-2.9l1.9.01v2.2h-1.4c-.2 0-.8.09-.8.9v1.5h2.2l-.3 2.2z"></path></svg>
+        </a>
+      </div>
+    </nav>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>Our Services</h2>
-    <div class="media">
-      <img src="placeholder.jpg" alt="Service Photo">
-      <video controls>
-        <source src="placeholder.mp4" type="video/mp4">
-        Your browser does not support video.
-      </video>
-    </div>
-    <p>We specialize in refrigeration and air conditioning system sales, installation, and maintenance.</p>
-  </section>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>FAR EAST REFRIGERATION &amp; AIR CONDITIONING SYSTEM TRADING</h1>
+        <p class="subtitle">Precision cooling. Trusted solutions. See our projects & installations below.</p>
+        <a class="cta-glow" href="https://www.facebook.com/share/179YKRTBgk/" target="_blank" rel="noopener">
+          Visit our Facebook page to contact us
+        </a>
+      </div>
+      <div class="hero-scroll-hint">Scroll</div>
+    </header>
 
-  <!-- Contact Form -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <label>Name:</label>
-      <input type="text" name="name" required>
+    <!-- SHOWROOM CAROUSEL -->
+    <section class="showroom" aria-label="Project showcase">
+      <div class="carousel" id="carousel">
+        <!-- Slide template: replace src with your images or video tags -->
+        <div class="slide active" data-caption="Installation: Cooling unit - Warehouse A">
+          <img src="media1.jpg" alt="Cooling unit installation photo">
+          <div class="caption">Installation: Cooling unit - Warehouse A</div>
+        </div>
 
-      <label>Address:</label>
-      <input type="text" name="address" required>
+        <div class="slide" data-caption="Maintenance service - Unit inspection">
+          <video playsinline muted preload="metadata" loop>
+            <source src="media2.mp4" type="video/mp4">
+            <!-- fallback -->
+          </video>
+          <div class="caption">Maintenance service - Unit inspection</div>
+        </div>
 
-      <label>Mobile Number:</label>
-      <input type="tel" name="mobile" required>
+        <div class="slide" data-caption="Commercial project - Rooftop Condenser">
+          <img src="media3.jpg" alt="Rooftop condenser installation">
+          <div class="caption">Commercial project - Rooftop Condenser</div>
+        </div>
+      </div>
 
-      <label>Facebook/Messenger Address:</label>
-      <input type="text" name="messenger" required>
+      <!-- Controls -->
+      <div class="controls">
+        <button class="prev" aria-label="Previous slide">&lt;</button>
+        <div class="dots" id="dots" aria-hidden="false"></div>
+        <button class="next" aria-label="Next slide">&gt;</button>
+      </div>
+    </section>
 
-      <label>Your Concern:</label>
-      <textarea name="concern" rows="4" required></textarea>
+    <!-- GRID GALLERY (scroll reveal) -->
+    <section class="gallery" aria-label="Gallery">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <figure class="tile" tabindex="0">
+          <img src="gallery1.jpg" alt="Project image 1">
+          <figcaption>Retail refrigeration installation — City Mall</figcaption>
+        </figure>
+        <figure class="tile" tabindex="0">
+          <img src="gallery2.jpg" alt="Project image 2">
+          <figcaption>Industrial chiller — Logistics Center</figcaption>
+        </figure>
+        <figure class="tile" tabindex="0">
+          <img src="gallery3.jpg" alt="Project image 3">
+          <figcaption>Split AC installation — Office Suite</figcaption>
+        </figure>
+        <figure class="tile" tabindex="0">
+          <img src="gallery4.jpg" alt="Project image 4">
+          <figcaption>Preventive maintenance — Equipment check</figcaption>
+        </figure>
+      </div>
+    </section>
 
-      <button type="button" id="submitBtn">Submit</button>
-    </form>
+    <!-- HIGHLIGHT / CALLOUT -->
+    <section class="callout">
+      <div class="callout-inner">
+        <h3>Why choose Far East?</h3>
+        <ul>
+          <li>Certified technicians &amp; safety-first installations</li>
+          <li>End-to-end service: supply, install, maintain</li>
+          <li>Fast response &amp; tailored commercial solutions</li>
+        </ul>
+        <a class="cta-primary" href="https://www.facebook.com/share/179YKRTBgk/" target="_blank" rel="noopener">Message us on Facebook</a>
+      </div>
+    </section>
 
-    <div id="submitNote" class="hidden">
-      ✅ File saved successfully.  
-      <br><br>
-      <a href="https://m.me/fabale2005" target="_blank" class="share-btn">📩 Share to Messenger</a>
-    </div>
-  </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>© <strong>FAR EAST REFRIGERATION</strong> — High-performance cooling solutions</div>
+        <div class="social">
+          <a class="fb-text" href="https://www.facebook.com/share/179YKRTBgk/" target="_blank" rel="noopener">Open Facebook</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
