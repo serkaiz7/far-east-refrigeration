@@ -106,42 +106,36 @@ button {
 button:hover {
   background: #004a99;
 }
+
 #submitNote {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 .hidden {
   display: none;
 }
 
-/* ---------------- RESPONSIVENESS ---------------- */
+.share-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.7rem 1.2rem;
+  background: #0084ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.share-btn:hover {
+  background: #006edc;
+}
+
+/* Responsive */
 @media (min-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
   }
   .hero p {
     font-size: 1.2rem;
-  }
-  .about h2,
-  .contact h2 {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    height: 70vh;
-  }
-  .hero h1 {
-    font-size: 2.6rem;
-  }
-  .hero p {
-    font-size: 1.3rem;
-  }
-  .about .media {
-    flex-wrap: nowrap;
-  }
-  .about img, .about video {
-    max-width: 400px;
   }
 }
