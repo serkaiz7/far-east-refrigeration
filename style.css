@@ -21,6 +21,7 @@ body {
   justify-content: center;
   text-align: center;
   color: white;
+  padding: 1rem;
 }
 .hero .overlay {
   position: absolute;
@@ -34,17 +35,20 @@ body {
   max-width: 800px;
 }
 .hero h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1rem;
 }
 
 /* About */
 .about {
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
   text-align: center;
 }
 .about h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 .about .media {
@@ -54,19 +58,20 @@ body {
   flex-wrap: wrap;
 }
 .about img, .about video {
-  max-width: 300px;
+  width: 100%;
+  max-width: 320px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Contact */
 .contact {
-  padding: 3rem 2rem;
+  padding: 3rem 1.5rem;
   background: #fff;
   text-align: center;
 }
 .contact h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 form {
@@ -79,11 +84,14 @@ form {
 }
 label {
   font-weight: bold;
+  font-size: 0.9rem;
 }
 input, textarea {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
 }
 button {
   padding: 0.8rem;
@@ -93,6 +101,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.3s ease;
 }
 button:hover {
   background: #004a99;
@@ -103,4 +112,36 @@ button:hover {
 }
 .hidden {
   display: none;
+}
+
+/* ---------------- RESPONSIVENESS ---------------- */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .about h2,
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+  .hero p {
+    font-size: 1.3rem;
+  }
+  .about .media {
+    flex-wrap: nowrap;
+  }
+  .about img, .about video {
+    max-width: 400px;
+  }
 }
