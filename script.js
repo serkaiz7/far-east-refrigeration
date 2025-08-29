@@ -5,7 +5,7 @@
   const carousel = document.getElementById('carousel');
   const slides = Array.from(carousel.querySelectorAll('.slide'));
   const dotsContainer = document.getElementById('dots');
-  let idx = 0, autoplay = true, autoplayInterval = 6000, timer;
+  let idx = 0, autoplay = true, autoplayInterval = 24000, timer;
 
   // Create dots
   slides.forEach((s, i) => {
